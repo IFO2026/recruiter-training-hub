@@ -8,26 +8,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* Producers Prospect Brand Palette */
+  /* Producers Prospect Brand Palette — Black / White / Gray */
   --black: #000000;
-  --dark-slate: #34394D;
-  --dark-text: #1F2124;
-  --body-text: #33373D;
-  --gray-text: #69727D;
-  --blue: #0144A6;
-  --blue-light: #EAF0F8;
-  --pink: #CC3366;
-  --pink-light: #E84B80;
+  --dark-slate: #1A1A1A;
+  --dark-text: #111111;
+  --body-text: #374151;
+  --gray-text: #6B7280;
+  --blue: #000000;
+  --blue-light: #F3F4F6;
+  --pink: #6B7280;
+  --pink-light: #9CA3AF;
   --white: #FFFFFF;
-  --off-white: #F9F9F9;
-  --warm-white: #FFFAF2;
-  --gray-100: #F2F2F2;
-  --gray-200: #E0E0E0;
-  --gray-300: #CCCCCC;
-  --green-check: #2E8B57;
-  --red-lock: #C0392B;
-  --shadow: 0 4px 24px rgba(0,0,0,0.08);
-  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --off-white: #FAFAFA;
+  --warm-white: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --green-check: #374151;
+  --red-lock: #991B1B;
+  --shadow: 0 4px 24px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.10);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,7 +46,7 @@ h1, h2, h3, .module-header h2, .hero h1 {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(135deg, var(--dark-slate) 0%, #2A2E3E 50%, var(--black) 100%);
+  background: linear-gradient(135deg, #1A1A1A 0%, #111111 50%, var(--black) 100%);
   color: var(--white);
   padding: 48px 24px 56px;
   text-align: center;
@@ -60,7 +60,7 @@ h1, h2, h3, .module-header h2, .hero h1 {
   right: -20%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(204,51,102,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(107,114,128,0.08) 0%, transparent 70%);
   border-radius: 50%;
 }
 .hero-logo {
@@ -101,7 +101,7 @@ h1, h2, h3, .module-header h2, .hero h1 {
   display: inline-flex;
   gap: 20px;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(204,51,102,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 40px;
   padding: 10px 28px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -151,7 +151,7 @@ h1, h2, h3, .module-header h2, .hero h1 {
 }
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--pink), var(--pink-light));
+  background: linear-gradient(90deg, var(--black), #374151);
   border-radius: 6px;
   transition: width 0.5s ease;
   width: 0%;
@@ -253,7 +253,7 @@ h1, h2, h3, .module-header h2, .hero h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--pink);
-  background: rgba(204,51,102,0.08);
+  background: rgba(107,114,128,0.1);
   padding: 4px 14px;
   border-radius: 4px;
   margin-bottom: 12px;
@@ -574,8 +574,8 @@ h1, h2, h3, .module-header h2, .hero h1 {
 
 /* Coach's Note */
 .coach-note {
-  background: linear-gradient(135deg, rgba(204,51,102,0.06), rgba(204,51,102,0.02));
-  border: 1px solid rgba(204,51,102,0.2);
+  background: linear-gradient(135deg, rgba(107,114,128,0.06), rgba(107,114,128,0.02));
+  border: 1px solid rgba(107,114,128,0.2);
   border-radius: 10px;
   padding: 20px 24px;
   margin: 20px 0;
@@ -1677,6 +1677,782 @@ const modules = [
           <li style="color:rgba(255,255,255,0.85);padding-left:20px;">Competitors with better packaging can win attention first</li>
         </ul>
         <p style="margin-top:10px;">Because if what the brand says online doesn't match what you're about as an advisor &mdash; that's not just a branding issue. It's a growth issue.</p>
+      </div>
+    `
+  },
+
+  /* ========================================================
+     ROTH BLUEPRINT TRAINING — Modules 12–15
+     ======================================================== */
+
+  {
+    id: 11,
+    short: "Roth Blueprint",
+    title: "Roth Blueprint — Overview & Why It Matters",
+    desc: "Understand the Roth Blueprint platform, why Roth conversions are a massive market opportunity, and how to position yourself as the advisor who unlocks tax-free retirement wealth.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> What Is the Roth Blueprint?</h3>
+        <p>The Roth Blueprint is a proprietary software and strategy platform built from the ground up to help advisors create step-by-step Roth conversion plans for clients. It combines tax bracket analysis, Medicare IRMAA modeling, and multi-year conversion projections into one branded, client-facing tool.</p>
+        <p style="margin-top:12px;">Created by Steve Hutchinson — CEO of AnnuityScore and a 40+ year industry veteran — the system is designed for advisors who want to close smarter, convert faster, and scale bigger using Roth conversion strategies.</p>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> The Market Opportunity</h3>
+        <p>Traditional IRAs hold trillions in deferred tax liability. As tax rates face upward pressure, retirees ages 50–75+ with $50K to $5M in traditional retirement accounts are actively searching for answers. The Roth Blueprint positions you as the advisor who can show them — visually, in real-time — exactly how to convert without jumping tax brackets.</p>
+        <div class="concept-grid" style="margin-top:16px;">
+          <div class="concept-item" style="background:var(--gray-100);border-radius:10px;padding:20px;">
+            <strong style="color:var(--dark-text);font-size:18px;">$1.6B+</strong>
+            <p style="margin-top:4px;font-size:13px;">In identified lifetime tax-free gains generated through the platform in 2026</p>
+          </div>
+          <div class="concept-item" style="background:var(--gray-100);border-radius:10px;padding:20px;">
+            <strong style="color:var(--dark-text);font-size:18px;">Ages 50–75+</strong>
+            <p style="margin-top:4px;font-size:13px;">Sweet-spot demographic — pre-retirees and early retirees with accumulated IRA balances</p>
+          </div>
+          <div class="concept-item" style="background:var(--gray-100);border-radius:10px;padding:20px;">
+            <strong style="color:var(--dark-text);font-size:18px;">Up to 97%</strong>
+            <p style="margin-top:4px;font-size:13px;">More lifetime wealth unlocked through optimized, multi-year conversion planning</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> The 7 Hidden Costs of Traditional IRAs</h3>
+        <p>Most clients don't realize their traditional IRA is quietly eroding their retirement wealth. These seven costs are your conversation starters:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:14px;">
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">1. Required Minimum Distributions (RMDs)</strong>
+            <p style="font-size:13px;margin-top:4px;">Forced withdrawals starting at age 73 — whether they need the money or not — pushing them into higher brackets.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">2. Taxes on Social Security</strong>
+            <p style="font-size:13px;margin-top:4px;">IRA distributions count as provisional income, potentially making up to 85% of Social Security taxable.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">3. IRMAA Medicare Surcharges</strong>
+            <p style="font-size:13px;margin-top:4px;">Higher income from RMDs triggers Income-Related Monthly Adjustment Amounts — adding thousands to annual Medicare premiums.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">4. Lost Opportunity Costs</strong>
+            <p style="font-size:13px;margin-top:4px;">Money withdrawn for taxes can never compound again. Early, strategic conversion preserves long-term growth potential.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">5. Single Filing Status Trap</strong>
+            <p style="font-size:13px;margin-top:4px;">Surviving spouses drop to single filing, pushing the same income into higher brackets — a planning blind spot for most couples.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">6. Generational Tax Burden</strong>
+            <p style="font-size:13px;margin-top:4px;">The SECURE Act eliminated stretch IRAs. Heirs must liquidate inherited IRAs within 10 years — often at peak earning and tax rates.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">7. Future Tax Rate Risk</strong>
+            <p style="font-size:13px;margin-top:4px;">Current rates are historically low. Converting now locks in today's rates, hedging against future legislative increases.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <strong>Recruiter Positioning:</strong> When speaking to advisors about Roth Blueprint, lead with the market opportunity — not the software features. Frame it as: "We give you a proprietary system that turns every IRA holder into a conversion conversation and every conversion into a deeper planning relationship."
+      </div>
+    `
+  },
+
+  {
+    id: 12,
+    short: "Roth Software",
+    title: "Roth Blueprint — Software Walkthrough & Key Features",
+    desc: "Learn the Roth Blueprint software capabilities so you can demonstrate its value to prospective advisors and their clients.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> The 4-Step Roth Blueprint Process</h3>
+        <p>The software follows a structured 4-step approach that simplifies even large-ticket conversions into a clear, visual plan:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:16px;">
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;text-align:center;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 1</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Baseline Calculation</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">Enter Social Security income, deductions, and current tax picture to establish the client's starting point.</p>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;text-align:center;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 2</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Bracket Analysis</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">The software calculates exactly how much can be converted each year without jumping into the next tax bracket.</p>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;text-align:center;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 3</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Multi-Year Modeling</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">Project a year-by-year conversion strategy that accounts for tax brackets, IRMAA thresholds, and asset growth.</p>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;text-align:center;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 4</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Branded Report</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">Generate a comprehensive, advisor-branded Roth conversion blueprint the client can take home and act on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Core Software Capabilities</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:14px;">
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Tax Bracket Analyzer</strong>
+            <p style="font-size:13px;margin-top:6px;">Intuitive visual tool showing real-time projections of where the client sits within each bracket — and how much room remains for conversion.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Medicare IRMAA Modeling</strong>
+            <p style="font-size:13px;margin-top:6px;">Calculates the impact of conversions on Medicare premiums, helping minimize lifetime healthcare costs with precision planning.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Guaranteed Income Integration</strong>
+            <p style="font-size:13px;margin-top:6px;">Model Roth conversions using Fixed Indexed Annuities (FIAs) — showing how clients can convert to tax-free guaranteed lifetime income.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Social Security Optimization</strong>
+            <p style="font-size:13px;margin-top:6px;">Factors in Social Security timing and taxation to show clients the full picture of how conversions affect their total retirement income.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Branded Client Reports</strong>
+            <p style="font-size:13px;margin-top:6px;">Generate comprehensive, advisor-branded reports that clients can review with family, CPAs, and estate attorneys — reinforcing your authority.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">3 Key Pillars</strong>
+            <p style="font-size:13px;margin-top:6px;">The system is built on three client-facing promises: No out-of-pocket costs for the conversion, no jumping tax brackets, and no risk to principal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Running Your First Blueprint</h3>
+        <p>The training hub at <strong>rothblueprint.com/training</strong> includes a beginner-level walkthrough where Steve Hutchinson guides you through everything you need to know to run a new Blueprint for a client — from initial inputs to final report generation.</p>
+        <p style="margin-top:10px;">Key inputs you'll need from the client:</p>
+        <ul style="margin-top:8px;padding-left:20px;">
+          <li style="padding:4px 0;">State of residence (state tax implications)</li>
+          <li style="padding:4px 0;">Age and retirement status</li>
+          <li style="padding:4px 0;">Traditional IRA / 401(k) balance</li>
+          <li style="padding:4px 0;">Risk tolerance and growth vs. income preference</li>
+          <li style="padding:4px 0;">Marital status and household taxable income</li>
+          <li style="padding:4px 0;">Social Security income (actual or projected)</li>
+        </ul>
+      </div>
+
+      <div class="coach-note">
+        <strong>Advisor Value Prop:</strong> When recruiting advisors, position the software as a point-of-sale closing tool — not just an illustration engine. Top-performing advisors use the Roth Blueprint to walk a prospect through a personalized conversion plan in a single meeting, creating urgency and confidence simultaneously.
+      </div>
+    `
+  },
+
+  {
+    id: 13,
+    short: "Roth Bootcamps",
+    title: "Roth Blueprint — Bootcamps & Client Presentations",
+    desc: "Learn how to leverage Roth Blueprint Bootcamps to fill rooms with qualified prospects and convert educational events into planning relationships.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> What Are Roth Bootcamps?</h3>
+        <p>Roth Blueprint Bootcamps are structured, value-packed educational sessions where advisors present Roth conversion strategies to a room full of prospects — without the awkward sales pitch. These events build trust and open doors for meaningful conversations that lead to results.</p>
+        <p style="margin-top:12px;">The 2026 Virtual Roth Bootcamp series focuses on helping advisors master the art of client-facing presentations using clear, compelling visuals and straightforward language.</p>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> What You'll Learn in Bootcamp Training</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:14px;">
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Who to Invite</h4>
+            <p style="font-size:13px;">Identify and target the right audience — pre-retirees and retirees ages 50–75+ with traditional IRA balances who are actively concerned about taxes in retirement.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">How to Invite Them</h4>
+            <p style="font-size:13px;">Proven invitation strategies and marketing language that fill seats. Learn the messaging that resonates with prospects who are already searching for tax-reduction answers.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Delivering the Presentation</h4>
+            <p style="font-size:13px;">Use client-friendly visuals and straightforward language to make complex Roth conversion strategies feel simple, urgent, and actionable.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Handling Questions</h4>
+            <p style="font-size:13px;">Respond confidently to questions and concerns — keeping conversations moving forward smoothly without losing momentum or trust.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Closing Without Being Pushy</h4>
+            <p style="font-size:13px;">Use live case studies and guided walkthroughs to inspire clients to take the next step — naturally and without pressure.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Post-Event Follow-Up</h4>
+            <p style="font-size:13px;">Turn attendees into appointments with a structured follow-up sequence that reinforces urgency and positions you as the specialist.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Bootcamp Event Playbook</h3>
+        <div class="cadence-timeline" style="margin-top:14px;">
+          <div class="cadence-step">
+            <div class="cadence-day">4 Weeks Out</div>
+            <div class="cadence-action"><strong>Select format & venue.</strong> Virtual or in-person. For virtual, use a webinar platform with screen share for live Blueprint demos. For in-person, choose a professional venue (library, restaurant private room, hotel meeting room).</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">3 Weeks Out</div>
+            <div class="cadence-action"><strong>Launch invitations.</strong> Use the messaging framework: "Before You Retire: The Tax Decision That Could Shape What You Actually Keep." Target existing clients, COI referrals, and direct mail to qualified demographics.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">1 Week Out</div>
+            <div class="cadence-action"><strong>Confirm registrations & prepare materials.</strong> Send reminder emails, prepare 2–3 live case studies using the Roth Blueprint software, and rehearse the presentation flow.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Event Day</div>
+            <div class="cadence-action"><strong>Deliver & collect.</strong> Present the 7 Hidden Costs framework, run a live Blueprint demo, and collect appointment requests using a simple one-page form.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">48 Hours After</div>
+            <div class="cadence-action"><strong>Follow up.</strong> Send personalized thank-you emails with a link to schedule their individual Blueprint session. Call attendees who expressed interest but didn't book on the spot.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <strong>Recruiting Angle:</strong> Bootcamps are a powerful recruiting differentiator. When speaking to prospective advisors, emphasize that we don't just give them software — we give them a complete client-acquisition system: the event format, the marketing language, the presentation flow, and the follow-up framework. That's infrastructure most IMOs don't provide.
+      </div>
+    `
+  },
+
+  {
+    id: 14,
+    short: "Roth Positioning",
+    title: "Roth Blueprint — Recruiting & Business Development",
+    desc: "How to position Roth Blueprint as a recruiting advantage and use Roth conversion planning to deepen advisor relationships and accelerate asset growth.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Why Roth Blueprint Is a Recruiting Weapon</h3>
+        <p>Most advisors have heard about Roth conversions. Very few have a systematic, software-backed process to execute them at scale. That gap is your recruiting edge.</p>
+        <div class="msg-grid" style="margin-top:16px;">
+          <div class="msg-item">
+            <strong>The Problem Advisors Face</strong>
+            <p>They know Roth conversions matter, but they lack the tools to model multi-year strategies, visualize tax bracket impacts, and present it all in a way that closes business.</p>
+          </div>
+          <div class="msg-item">
+            <strong>What We Offer</strong>
+            <p>A proprietary platform that turns every IRA holder into a conversion conversation and every conversion into a deeper planning relationship — with branded reports, client events, and ongoing support.</p>
+          </div>
+          <div class="msg-item">
+            <strong>The Competitive Gap</strong>
+            <p>Other IMOs offer product access. We offer a practice-building system. Roth Blueprint becomes the centerpiece of an advisor's prospecting, presentation, and retention strategy.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Ideal Advisor Profile for Roth Blueprint</h3>
+        <p>Not every advisor is the right fit. Focus your recruiting conversations on advisors who match these criteria:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:14px;">
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Retirement-Focused Practices</strong>
+            <p style="font-size:13px;margin-top:4px;">Advisors already working with retirees or pre-retirees who hold traditional IRAs and 401(k)s.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Annuity & Insurance Producers</strong>
+            <p style="font-size:13px;margin-top:4px;">Professionals already comfortable with FIAs who can position guaranteed income as the Roth conversion vehicle.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Event-Oriented Advisors</strong>
+            <p style="font-size:13px;margin-top:4px;">Those who already run seminars or workshops — or want to start — and need a proven topic and presentation system.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Growth-Minded Independents</strong>
+            <p style="font-size:13px;margin-top:4px;">Advisors who feel under-supported by their current IMO and are looking for a platform that actively helps them produce.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Talk Track: Introducing Roth Blueprint to a Prospect</h3>
+        <div class="script-block">
+          <h4>Opening the Roth Conversation</h4>
+          <blockquote>"One of the things that sets us apart is a proprietary system we use called the Roth Blueprint. Most advisors know Roth conversions are valuable, but few have the tools to actually model a multi-year strategy for a client — showing them exactly how much to convert each year without jumping tax brackets, what it does to their Medicare costs, and what their tax-free retirement income looks like on the other side. We give our advisors that system, plus the client events, marketing, and training to turn it into a consistent pipeline."</blockquote>
+        </div>
+        <div class="script-block">
+          <h4>Handling "I Already Do Roth Conversions"</h4>
+          <blockquote>"That tells me you already see the value — which puts you ahead of most advisors. The question is whether you have a systematic way to identify every client who should be converting, model it year by year, and present a branded plan that makes the decision feel obvious. That's what the Roth Blueprint does — it turns a conversation you're already having into a formal process that closes more business and generates referrals."</blockquote>
+        </div>
+        <div class="script-block">
+          <h4>Handling "My Clients Are Too Old / Too Young for This"</h4>
+          <blockquote>"The sweet spot is actually broader than most people think. Anyone between 50 and 75 with a traditional IRA is a candidate — especially in this tax environment. And for younger clients, showing them a long-term conversion roadmap positions you as a planning advisor, not just a product provider. The Roth Blueprint gives you that full spectrum."</blockquote>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> COI Partnership Strategy</h3>
+        <p>Roth Blueprint opens doors with CPAs and estate attorneys who are already fielding Roth conversion questions from their clients but lack the planning tools to model it properly.</p>
+        <div class="cadence-timeline" style="margin-top:14px;">
+          <div class="cadence-step">
+            <div class="cadence-day">Step 1</div>
+            <div class="cadence-action"><strong>Identify CPAs and attorneys</strong> working with clients who hold $250K+ in traditional retirement accounts — especially those going through business exits, retirement, or estate transitions.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Step 2</div>
+            <div class="cadence-action"><strong>Lead with education, not product.</strong> Offer a 20-minute demo of the Roth Blueprint software showing how it models multi-year conversion strategies — something they can't do in a spreadsheet.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Step 3</div>
+            <div class="cadence-action"><strong>Co-host a client event.</strong> Invite the CPA or attorney to participate in a Roth Bootcamp as a co-presenter. This deepens the relationship and creates shared client opportunities.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Step 4</div>
+            <div class="cadence-action"><strong>Create a referral loop.</strong> After the event, share Roth Blueprint reports with the COI for their client files. This positions them as part of the planning team and creates an ongoing referral channel.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <strong>Key Takeaway:</strong> Roth Blueprint is not just a software tool — it's an entire practice-building ecosystem. When recruiting, position it as the intersection of technology, education, and client acquisition that turns an advisor's existing book into a deeper, more profitable planning practice.
+      </div>
+    `
+  },
+
+  /* ========================================================
+     DEFERRED SALES TRUST (DST) TRAINING — Modules 16–19
+     ======================================================== */
+
+  {
+    id: 15,
+    short: "DST Overview",
+    title: "Deferred Sales Trust — What It Is & Why It Matters",
+    desc: "Understand the Deferred Sales Trust strategy, how it works under IRC Section 453, and why it's one of the most powerful capital gains tax deferral tools available to your clients.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> What Is a Deferred Sales Trust?</h3>
+        <p>The Deferred Sales Trust ("DST") is a capital gains tax deferral strategy that offers an attractive and flexible alternative to a 1031 Exchange. It can dramatically decrease or defer the capital gains taxes that would otherwise be recognized in the year of a sale — allowing the seller to generate a potentially higher rate of return by leveraging the pre-tax proceeds, which can be significantly greater than what remains after a fully taxable sale.</p>
+        <p style="margin-top:12px;">The DST is a type of IRC Section 453 installment sale, also known as a "seller carry-back" sale. Under this code section, the seller may achieve significant tax-deferral benefits by not receiving actual or constructive receipt of the proceeds at the time of the sale, instead receiving payments over time.</p>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> The Core Problem We Solve</h3>
+        <p>Owners of businesses, real estate, and other highly appreciated assets are often reluctant to sell their property due to the significant capital gains tax liability that can result. This reluctance can trap clients in concentrated, illiquid positions — costing them optionality, diversification, and retirement flexibility.</p>
+        <div class="msg-grid" style="margin-top:16px;">
+          <div class="msg-item">
+            <strong>Without a DST</strong>
+            <p>The seller faces immediate recognition of the full capital gains tax — often 20% federal, plus state taxes, plus the 3.8% Medicare surtax. On a $10M sale, this can mean $2M+ lost to taxes at closing.</p>
+          </div>
+          <div class="msg-item">
+            <strong>With a DST</strong>
+            <p>The seller defers the capital gains tax, retains the pre-tax proceeds working for them inside the trust, and receives payments on a schedule that fits their financial plan — potentially paying $0 in capital gains at closing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> How the DST Structure Works</h3>
+        <p>When the taxpayer decides to proceed, the ownership of their highly appreciated capital asset is transferred to a dedicated trust. There is generally no capital gains tax immediately owing from this transfer under Section 453, and no capital gains tax liability from the trust's sale to the buyer because there is no capital gain at that level.</p>
+        <div class="cadence-timeline" style="margin-top:14px;">
+          <div class="cadence-step">
+            <div class="cadence-day">Step 1</div>
+            <div class="cadence-action"><strong>Seller transfers the asset to the Trust.</strong> The Trust purchases the property from the seller under an installment sales contract. The seller becomes a noteholder (creditor).</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Step 2</div>
+            <div class="cadence-action"><strong>Trust sells the asset to the third-party buyer.</strong> The Trust sells the asset at fair market value. Because the Trust purchased at the same price, there is no capital gain at the trust level.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Step 3</div>
+            <div class="cadence-action"><strong>Pre-tax proceeds are invested inside the Trust.</strong> The full pre-tax amount is deployed into a diversified portfolio consistent with the seller's risk tolerance and preferences.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Step 4</div>
+            <div class="cadence-action"><strong>Installment payments are made to the seller over time.</strong> Capital gains tax is only recognized as principal payments are received — spreading the tax liability across many years at potentially lower marginal rates.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Key DST Advantages Over a 1031 Exchange</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:14px;">
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">No "Like-Kind" Requirement</strong>
+            <p style="font-size:13px;margin-top:4px;">Unlike a 1031 Exchange, proceeds do not have to be invested in "like-kind" property within a compressed timeframe. The trust can invest in a diversified portfolio.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Flexible Payment Schedule</strong>
+            <p style="font-size:13px;margin-top:4px;">Repayment terms can be structured for minimal principal, rapid amortization, or delayed commencement — whatever serves the seller's planning needs.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Works for Any Appreciated Asset</strong>
+            <p style="font-size:13px;margin-top:4px;">Businesses, commercial real estate, investment properties, primary residences, major stock positions, artwork, and collectibles — not just real property.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Can Sever Partnership Interests</strong>
+            <p style="font-size:13px;margin-top:4px;">When a partnership sells an appreciated asset, each partner can have their own DST managed to their individual risk tolerance — unlike a 1031 where partners must stay together.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <strong>Recruiter Positioning:</strong> The DST is a conversation-starter with every advisor who works with business owners, real estate investors, or anyone holding a highly appreciated asset. Lead with the problem — "Your clients are trapped in assets they'd sell tomorrow if the tax bill weren't so punishing" — and position the DST as the planning tool that removes the barrier.
+      </div>
+    `
+  },
+
+  {
+    id: 16,
+    short: "DST Benefits",
+    title: "Deferred Sales Trust — Primary Benefits & Use Cases",
+    desc: "Master the full range of DST benefits — from tax deferral and liquidity to estate planning and asset protection — so you can position the strategy for any client scenario.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Primary Benefits of the DST</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:14px;">
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Tax Deferral</h4>
+            <p style="font-size:13px;">When appreciated assets are sold, tax on the gain is deferred until the seller receives principal payments. Managing the amount and frequency of distributions can enable the seller to benefit from lower marginal tax rates across multiple years.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Liquidity & Diversification</h4>
+            <p style="font-size:13px;">Converts an illiquid asset — like a business or commercial property — into a diversified portfolio of liquid investments. This reduces risk and volatility by eliminating overexposure to a single asset class.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Enhanced Retirement Income</h4>
+            <p style="font-size:13px;">Provides a stream of income for retirement based on the pre-tax proceeds from the sale instead of the after-tax proceeds — which are likely to be substantially less.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Maintains Family Wealth</h4>
+            <p style="font-size:13px;">Avoids the massive drain of equity at sale, provides estate planning benefits, and creates estate liquidity so family assets don't have to be liquidated under unfavorable circumstances.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Estate Tax Benefits</h4>
+            <p style="font-size:13px;">The DST can accomplish an estate freeze, potentially remove sale proceeds from the seller's taxable estate beyond the unified credit, and the trust can be domiciled in a tax-favorable state.</p>
+          </div>
+          <div class="segment-card">
+            <h4 style="color:var(--dark-text);margin-bottom:8px;">Asset Protection & Probate Avoidance</h4>
+            <p style="font-size:13px;">Subject to state-specific laws, the DST can provide asset protection and help avoid the delays and expense of probate — keeping wealth within the family's control.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Hypothetical Scenarios</h3>
+        <p>These examples illustrate the potential tax savings a DST can deliver across different asset types and geographies:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:16px;">
+          <div style="background:var(--black);color:var(--white);padding:24px;border-radius:10px;">
+            <div style="font-family:'Roboto Condensed',sans-serif;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Commercial Property — NYC</div>
+            <div style="font-size:13px;line-height:1.7;">
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Sale Proceeds:</span><strong>$20,000,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Taxable Gain:</span><strong>$18,000,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Tax Due (Fed + NY + Medicare):</span><strong style="color:#ef4444;">$6,770,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:8px 0;"><span>Tax Due with DST:</span><strong style="color:#22c55e;">$0 at closing</strong></div>
+            </div>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px;border-radius:10px;">
+            <div style="font-family:'Roboto Condensed',sans-serif;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Business Sale — Chicago</div>
+            <div style="font-size:13px;line-height:1.7;">
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Sale Proceeds:</span><strong>$10,000,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Taxable Gain:</span><strong>$10,000,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Tax Due (Fed + IL + Medicare):</span><strong style="color:#ef4444;">$2,495,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:8px 0;"><span>Tax Due with DST:</span><strong style="color:#22c55e;">$62,375*</strong></div>
+            </div>
+            <p style="font-size:11px;margin-top:6px;color:rgba(255,255,255,0.5);">*Mortgage over basis ($250K) is non-deferrable. Gains taxes paid pro rata as principal is received.</p>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px;border-radius:10px;">
+            <div style="font-family:'Roboto Condensed',sans-serif;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Primary Residence — Los Angeles</div>
+            <div style="font-size:13px;line-height:1.7;">
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Sale Proceeds:</span><strong>$4,000,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Taxable Gain (after Sec. 121):</span><strong>$3,100,000</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.15);"><span>Tax Due (Fed + CA + Medicare):</span><strong style="color:#ef4444;">$1,150,100</strong></div>
+              <div style="display:flex;justify-content:space-between;padding:8px 0;"><span>Tax Due with DST:</span><strong style="color:#22c55e;">$0 at closing</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Ideal Client Profile</h3>
+        <p>The DST is designed for clients who hold highly appreciated assets and are considering a sale. Focus your conversations on:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:14px;">
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Business Owners Planning an Exit</strong>
+            <p style="font-size:13px;margin-top:4px;">Selling a business with significant goodwill and appreciation.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Commercial Real Estate Investors</strong>
+            <p style="font-size:13px;margin-top:4px;">Tired of the 1031 treadmill or unable to find replacement property.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">High-Value Residential Sellers</strong>
+            <p style="font-size:13px;margin-top:4px;">Selling a primary residence with gains exceeding the Section 121 exclusion.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Concentrated Stock Holders</strong>
+            <p style="font-size:13px;margin-top:4px;">Executives or founders with major stock positions, artwork, or other highly appreciated assets.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <strong>Key Talking Point:</strong> The DST isn't just about saving taxes — it's about preserving the value of a lifetime of work. Frame it as: "What happens if you spend 30 years building value and lose a meaningful percentage of it because planning started too late?"
+      </div>
+    `
+  },
+
+  {
+    id: 17,
+    short: "DST Process",
+    title: "Deferred Sales Trust — The Client Process & Estate Planning Team",
+    desc: "Walk through the step-by-step DST implementation process and understand our partnership with Estate Planning Team for attorney-led DST execution.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Steps to Creating a Deferred Sales Trust</h3>
+        <p>The DST process is managed by specialized attorneys through our partnership with Estate Planning Team (EPT). Here is the step-by-step workflow:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:16px;">
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 1</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Case Evaluation</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">Enter the relevant details of the sale — property type, estimated value, basis, and transaction timeline. An experienced DST Attorney, Trustee, and Case Manager reviews the case to determine if the DST is a good fit.</p>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 2</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Introductory Conference Call</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">A conference call is set up to discuss how the client may benefit from the DST. A tax deferral illustration is created. The client's own tax and legal advisors are welcome to join.</p>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 3</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Conditional Engagement</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">A conditional engagement agreement is provided by the DST attorney. No upfront cost or obligation. The client is under no obligation to proceed or pay unless the sale closes and they fund the trust.</p>
+          </div>
+          <div style="background:var(--black);color:var(--white);padding:24px 20px;border-radius:10px;">
+            <div style="font-size:28px;font-weight:700;font-family:'Roboto Condensed',sans-serif;">Step 4</div>
+            <div style="font-size:14px;margin-top:8px;font-weight:600;">Implementation at Close</div>
+            <p style="font-size:12px;margin-top:8px;color:rgba(255,255,255,0.7);">The attorney prepares the documentation and implements the DST at the close of sale. Pre-tax proceeds are delivered to the Trust, invested per the client's preferences, and payments begin per the schedule.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Who Is Estate Planning Team?</h3>
+        <p>Estate Planning Team (EPT) is a membership organization with a network of experienced professionals who offer the Deferred Sales Trust — including financial advisors, insurance and real estate professionals, business brokers, attorneys, CPAs, and Qualified Intermediaries. EPT's organization stretches throughout the United States.</p>
+        <p style="margin-top:12px;">The DST is offered through EPT along with experienced and specialized attorneys who have unique expertise at structuring these transactions for sellers of highly appreciated real estate, businesses, and other assets.</p>
+        <div class="blue-accent-card" style="margin-top:16px;">
+          <strong>Key Point for Advisors:</strong> The process requires no upfront retainer and does not obligate the taxpayer to pay for any services unless the sale closes and they choose to fund the trust. This zero-risk entry point makes it easy to introduce the DST to clients — there is no cost to explore whether it's a fit.
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> How the DST Fits in Our Platform</h3>
+        <p>As a Producers Prospect advisor, you have direct access to DST case submission and support through our partnership with Estate Planning Team. Here's what that means for your practice:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:14px;">
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Warm Introduction</strong>
+            <p style="font-size:13px;margin-top:6px;">We facilitate the introduction between your client and the DST legal team — you remain the advisor of record and stay central to the relationship.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Tax Deferral Illustrations</strong>
+            <p style="font-size:13px;margin-top:6px;">EPT provides customized illustrations showing the client exactly how much they can defer — a powerful visual tool for closing the conversation.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Attorney-Led Execution</strong>
+            <p style="font-size:13px;margin-top:6px;">You don't need to be a tax or legal expert. The specialized attorneys handle all documentation, trust creation, and implementation.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:18px;border-radius:8px;">
+            <strong style="color:var(--dark-text);">Investment Management Opportunity</strong>
+            <p style="font-size:13px;margin-top:6px;">Once the trust is funded, the pre-tax proceeds need to be managed — creating a significant AUM opportunity for the advisor on the full pre-tax amount.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <strong>Contact for DST Cases:</strong> Bryce Hamilton — Founder, Head of Business Development | Intellivisor Family Office LLC | (215) 901-7278 | bryce@intellivisorfo.com | www.mydstplan.com/Intellivisorfo
+      </div>
+    `
+  },
+
+  {
+    id: 18,
+    short: "DST Recruiting",
+    title: "Deferred Sales Trust — Recruiting & COI Strategy",
+    desc: "Position the DST as a recruiting differentiator and learn how to build referral partnerships with CPAs, attorneys, and business brokers around capital gains planning.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Why DST Is a Recruiting Weapon</h3>
+        <p>Most advisors have never heard of the Deferred Sales Trust — or if they have, they don't know how to access it. That knowledge gap is your competitive advantage.</p>
+        <div class="msg-grid" style="margin-top:16px;">
+          <div class="msg-item">
+            <strong>The Advisor's Problem</strong>
+            <p>They have clients sitting on highly appreciated assets who won't sell because of the tax hit. The advisor has no solution beyond a 1031 Exchange — which only works for real property and comes with severe constraints.</p>
+          </div>
+          <div class="msg-item">
+            <strong>What We Offer</strong>
+            <p>A capital gains deferral strategy that works for any appreciated asset, has no like-kind requirement, no 45-day identification window, and no 180-day closing deadline. Plus attorney-led execution with no upfront cost to the client.</p>
+          </div>
+          <div class="msg-item">
+            <strong>The AUM Opportunity</strong>
+            <p>The DST creates an immediate AUM opportunity on the full pre-tax proceeds. A $10M business sale that would normally yield $7.5M after taxes instead delivers the entire $10M into a managed portfolio — inside the trust.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Talk Track: Introducing DST to a Prospective Advisor</h3>
+        <div class="script-block">
+          <h4>Opening the DST Conversation</h4>
+          <blockquote>"One of the capabilities that sets our platform apart is access to the Deferred Sales Trust. Do you have clients who own a business, real estate, or another highly appreciated asset they'd sell if the tax bill weren't so punishing? Most advisors do. The DST gives you a way to defer that entire capital gains liability — not through a 1031, but through a flexible, attorney-led trust structure under IRC Section 453. And here's the part advisors love: the full pre-tax proceeds go into a managed portfolio inside the trust, which means you're managing a significantly larger asset base than you would after a taxable sale."</blockquote>
+        </div>
+        <div class="script-block">
+          <h4>Handling "I've Never Heard of This"</h4>
+          <blockquote>"That's actually the norm — and it's exactly why it's such a differentiator for our advisors. The DST has been used in estate and tax planning for decades, but most advisors don't have access to the specialized attorneys who structure them. We do. That means you can offer your clients something their current advisor almost certainly can't — and it opens doors with business owners, real estate investors, and anyone holding a concentrated position."</blockquote>
+        </div>
+        <div class="script-block">
+          <h4>Handling "Is This Legal / Proven?"</h4>
+          <blockquote>"Great question — it's built on IRC Section 453, which is the same installment sale code that's been in the tax code for decades. The transactions are structured by specialized attorneys with deep experience in this area. The key distinction is that unlike a traditional installment sale, the DST offers more flexibility in risk management, repayment timing, and investment selection inside the trust. It's not a gray area — it's a well-established planning tool that most advisors simply haven't been introduced to."</blockquote>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> COI Partnership Strategy for DST</h3>
+        <p>The DST opens doors with every professional who works with clients facing capital gains events. Here's how to build those referral relationships:</p>
+        <div class="cadence-timeline" style="margin-top:14px;">
+          <div class="cadence-step">
+            <div class="cadence-day">CPAs</div>
+            <div class="cadence-action"><strong>Lead with their pain.</strong> CPAs see clients facing massive capital gains bills and feel helpless beyond recommending a 1031. Position the DST as a tool that makes the CPA a hero — they can now offer their clients a flexible alternative that preserves more wealth.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Attorneys</div>
+            <div class="cadence-action"><strong>Frame it as collaborative.</strong> Estate and business attorneys are natural referral partners because DST execution involves specialized legal counsel. Position it as: "We bring the strategy and the specialized DST attorneys — you stay central to your client's planning team."</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Business Brokers</div>
+            <div class="cadence-action"><strong>Solve the seller's hesitation.</strong> Business brokers regularly encounter sellers who won't sell because of the tax consequences. The DST removes that objection. Offer to present the strategy to their pipeline of potential sellers as a value-add.</div>
+          </div>
+          <div class="cadence-step">
+            <div class="cadence-day">Real Estate Agents</div>
+            <div class="cadence-action"><strong>Be the alternative to the 1031.</strong> When a real estate agent has a seller who can't find a 1031 replacement property — or doesn't want to buy more real estate — the DST is the answer. Position yourself as the planning resource they can bring to their high-value listings.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Marketing Angle: The Before-You-Sell Campaign</h3>
+        <p>A high-converting marketing theme for DST client acquisition:</p>
+        <div style="background:var(--black);color:var(--white);padding:28px;border-radius:10px;text-align:center;margin-top:14px;">
+          <div style="font-family:'Roboto Condensed',sans-serif;font-size:22px;font-weight:700;line-height:1.3;">"Before You Sell: The Planning Decisions That Can Shape What You Actually Keep."</div>
+          <p style="font-size:13px;margin-top:12px;color:rgba(255,255,255,0.7);">Use this theme for webinars, email campaigns, COI lunch-and-learns, and social media content targeting business owners and real estate investors.</p>
+        </div>
+        <p style="margin-top:16px;">This framing works because it's emotionally relevant, commercially serious, and broad enough to open conversations without sounding overly technical or product-driven. It positions you as a planning advisor — not a product vendor.</p>
+      </div>
+
+      <div class="coach-note">
+        <strong>Bottom Line:</strong> The DST is one of the most powerful planning tools in our platform — it opens doors with high-net-worth clients, creates significant AUM opportunities, builds deep COI relationships, and differentiates advisors in a way that no product shelf ever will. Make it a centerpiece of your recruiting conversations.
+      </div>
+    `
+  },
+
+  /* ========================================================
+     INFLUENCERS TO FOLLOW — Module 20
+     ======================================================== */
+
+  {
+    id: 19,
+    short: "Influencers",
+    title: "Influencers to Follow — Sharpen Your Sales Edge",
+    desc: "Top sales and business development influencers you should be following to stay sharp, improve your close rate, and adopt modern consultative selling techniques.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Why This Matters</h3>
+        <p>The best recruiters and producers never stop learning. The influencers below are reshaping how top performers approach sales conversations — moving away from outdated pitch-and-close tactics toward consultative, question-driven frameworks that build trust and close bigger deals. Study their content. Absorb their language. Apply it to your recruiting and advisor conversations.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px;margin-top:8px;">
+
+        <!-- Jeremy Miner -->
+        <div class="content-card" style="margin-top:0;">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+            <div style="width:60px;height:60px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:'Roboto Condensed',sans-serif;font-weight:700;font-size:24px;flex-shrink:0;">JM</div>
+            <div>
+              <h3 style="margin:0;font-size:18px;color:var(--dark-text);font-family:'Roboto Condensed',sans-serif;">Jeremy Miner</h3>
+              <p style="margin:2px 0 0;font-size:13px;color:var(--gray-text);">Founder, 7th Level Communications</p>
+            </div>
+          </div>
+
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;margin-bottom:14px;">
+            <strong style="color:var(--dark-text);font-size:14px;">Who He Is</strong>
+            <p style="font-size:13px;margin-top:6px;">One of the highest-earning commission-only salespeople in history. Founded 7th Level Communications in 2016, ranked the #1 fastest-growing sales training company in the U.S. by Inc. 5000 (2020 & 2021). Has trained over 200,000 salespeople in 40+ countries.</p>
+          </div>
+
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;margin-bottom:14px;">
+            <strong style="color:var(--dark-text);font-size:14px;">His Framework: NEPQ</strong>
+            <p style="font-size:13px;margin-top:6px;">Neuro-Emotional Persuasion Questioning (NEPQ) flips traditional sales on its head. Instead of pitching harder, you pull prospects in using empathy, emotional intelligence, and strategic curiosity. The method focuses on asking the right questions in the right sequence to help the prospect sell themselves.</p>
+          </div>
+
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;margin-bottom:14px;">
+            <strong style="color:var(--dark-text);font-size:14px;">Why You Should Follow Him</strong>
+            <p style="font-size:13px;margin-top:6px;">His content directly applies to recruiting conversations and advisor-facing sales. NEPQ teaches you to stop "convincing" and start guiding — which is exactly the consultative posture that works with experienced advisors who don't want to be pitched.</p>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <a href="https://www.instagram.com/jeremyleeminer/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--black);color:var(--white);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;">Instagram @jeremyleeminer</a>
+            <a href="https://www.tiktok.com/@jeremyleeminer" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--black);color:var(--white);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;">TikTok @jeremyleeminer</a>
+            <a href="https://www.youtube.com/@JeremyMiner" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--black);color:var(--white);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;">YouTube</a>
+            <a href="https://7thlevelhq.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--gray-100);color:var(--dark-text);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--gray-200);">7thlevelhq.com</a>
+          </div>
+
+          <div class="coach-note" style="margin-top:16px;">
+            <strong>Key Takeaway for Recruiters:</strong> Study Jeremy's "situation questions" and "problem-awareness questions." They map directly to the recruiting discovery call — instead of pitching our platform, ask the advisor what's broken in their current setup. Let them articulate the gap. Then you're not selling, you're solving.
+          </div>
+        </div>
+
+        <!-- Matt Easton -->
+        <div class="content-card" style="margin-top:0;">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+            <div style="width:60px;height:60px;border-radius:50%;background:var(--black);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:'Roboto Condensed',sans-serif;font-weight:700;font-size:24px;flex-shrink:0;">ME</div>
+            <div>
+              <h3 style="margin:0;font-size:18px;color:var(--dark-text);font-family:'Roboto Condensed',sans-serif;">Matt Easton</h3>
+              <p style="margin:2px 0 0;font-size:13px;color:var(--gray-text);">Founder, Easton University</p>
+            </div>
+          </div>
+
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;margin-bottom:14px;">
+            <strong style="color:var(--dark-text);font-size:14px;">Who He Is</strong>
+            <p style="font-size:13px;margin-top:6px;">Globally recognized sales trainer who has trained over 1 million salespeople across industries. Founded Easton University — a comprehensive sales training platform with 30+ courses — designed to move professionals from outdated pitch-and-close tactics to modern consultative, relational selling.</p>
+          </div>
+
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;margin-bottom:14px;">
+            <strong style="color:var(--dark-text);font-size:14px;">His Framework: Consultative Relational Selling</strong>
+            <p style="font-size:13px;margin-top:6px;">Matt's approach centers on confidence, daily structure, and relational selling. His training emphasizes that most sales professionals fail not because of lack of motivation but because they lack a repeatable daily system. His content addresses the mindset, habits, and conversational frameworks that produce consistent results.</p>
+          </div>
+
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;margin-bottom:14px;">
+            <strong style="color:var(--dark-text);font-size:14px;">Why You Should Follow Him</strong>
+            <p style="font-size:13px;margin-top:6px;">Matt's content is practical, high-energy, and directly applicable to daily prospecting and recruiting activity. His students report average sales increases of 700%. His focus on structure over motivation is exactly what separates consistent recruiters from one-hit wonders.</p>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <a href="https://www.instagram.com/eastonuniversity/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--black);color:var(--white);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;">Instagram @eastonuniversity</a>
+            <a href="https://www.tiktok.com/@eastonuniversity" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--black);color:var(--white);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;">TikTok @eastonuniversity</a>
+            <a href="https://www.youtube.com/@EastonUniversity" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--black);color:var(--white);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;">YouTube</a>
+            <a href="https://www.eastonuniversity.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--gray-100);color:var(--dark-text);border-radius:6px;font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--gray-200);">eastonuniversity.com</a>
+          </div>
+
+          <div class="coach-note" style="margin-top:16px;">
+            <strong>Key Takeaway for Recruiters:</strong> Matt's daily goal-setting and structured outreach methodology is gold for building recruiting discipline. Watch his content on activity-based metrics — how many calls, how many conversations, how many appointments. Apply his system to your weekly recruiting cadence.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="content-card" style="margin-top:20px;">
+        <h3><span class="icon">&#9670;</span> How to Use This Content</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:14px;">
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Daily Feed</strong>
+            <p style="font-size:13px;margin-top:4px;">Follow both on Instagram, TikTok, and YouTube. Their short-form content is designed to be consumed in 60-second bursts between calls.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Steal the Language</strong>
+            <p style="font-size:13px;margin-top:4px;">Pay attention to how they frame questions, handle objections, and create urgency without pressure. Adapt their phrasing to your recruiting and advisor conversations.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Share with Your Advisors</strong>
+            <p style="font-size:13px;margin-top:4px;">Forward their best clips to the advisors you recruit. It positions you as someone who invests in their growth — not just someone who wants their contract.</p>
+          </div>
+          <div style="background:var(--gray-100);padding:16px;border-radius:8px;border-left:3px solid var(--black);">
+            <strong style="color:var(--dark-text);">Apply to Call Scripts</strong>
+            <p style="font-size:13px;margin-top:4px;">Revisit the Call Scripts module (Module 11) and layer in NEPQ-style questioning and Easton's consultative framing to strengthen your delivery.</p>
+          </div>
+        </div>
       </div>
     `
   }
