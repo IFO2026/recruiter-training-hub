@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producers Prospect — Recruiter Training Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Producers Prospect Brand Palette — Black / White / Gray */
+  --black: #000000;
+  --dark-slate: #1A1A1A;
+  --dark-text: #111111;
+  --body-text: #374151;
+  --gray-text: #6B7280;
+  --blue: #000000;
+  --blue-light: #F3F4F6;
+  --pink: #6B7280;
+  --pink-light: #9CA3AF;
+  --white: #FFFFFF;
+  --off-white: #FAFAFA;
+  --warm-white: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --green-check: #374151;
+  --red-lock: #991B1B;
+  --shadow: 0 4px 24px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.10);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--off-white);
+  color: var(--body-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .module-header h2, .hero h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #1A1A1A 0%, #111111 50%, var(--black) 100%);
+  color: var(--white);
+  padding: 48px 24px 56px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(107,114,128,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.hero-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.hero-logo img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.hero h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--pink);
+}
+.hero p.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  max-width: 620px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+.hero-tagline {
+  display: inline-flex;
+  gap: 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 40px;
+  padding: 10px 28px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--pink);
+}
+.hero-tagline span { opacity: 0.35; color: #fff; }
+
+/* ===== PROGRESS BAR ===== */
+.progress-section {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 20px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.progress-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.progress-label .count {
+  color: var(--pink);
+  font-weight: 700;
+}
+.progress-track {
+  width: 100%;
+  height: 6px;
+  background: var(--gray-100);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--black), #374151);
+  border-radius: 6px;
+  transition: width 0.5s ease;
+  width: 0%;
+}
+
+/* ===== MODULE NAV ===== */
+.module-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.module-nav::-webkit-scrollbar { height: 4px; }
+.module-nav::-webkit-scrollbar-thumb { background: var(--gray-300); border-radius: 4px; }
+.nav-inner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  min-width: max-content;
+}
+.nav-tab {
+  padding: 14px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-text);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.nav-tab:hover { color: var(--black); }
+.nav-tab.active {
+  color: var(--black);
+  border-bottom-color: var(--pink);
+}
+.nav-tab.completed .tab-check {
+  color: var(--green-check);
+  font-size: 14px;
+}
+.nav-tab.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.nav-tab .tab-num {
+  background: var(--gray-100);
+  color: var(--gray-text);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.nav-tab.active .tab-num {
+  background: var(--pink);
+  color: var(--white);
+}
+.nav-tab.completed .tab-num {
+  background: var(--green-check);
+  color: var(--white);
+}
+
+/* ===== MODULE CONTENT ===== */
+.module-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.module-panel { display: none; }
+.module-panel.active { display: block; animation: fadeIn 0.3s ease; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.module-header {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--gray-100);
+}
+.module-badge {
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--pink);
+  background: rgba(107,114,128,0.1);
+  padding: 4px 14px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.module-header h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: clamp(24px, 4vw, 36px);
+  color: var(--black);
+  line-height: 1.15;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.module-header p {
+  font-size: 15px;
+  color: var(--gray-text);
+  max-width: 600px;
+}
+
+/* Content cards */
+.content-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.content-card h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.content-card h3 .icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.content-card h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dark-slate);
+  margin: 18px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.content-card p {
+  font-size: 14px;
+  color: var(--body-text);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.content-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 12px;
+}
+.content-card ul li {
+  padding: 5px 0 5px 24px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--body-text);
+}
+.content-card ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 6px;
+  color: var(--pink);
+  font-weight: 700;
+}
+
+/* Comparison table */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 12px 0;
+}
+@media (max-width: 600px) { .compare-grid { grid-template-columns: 1fr; } }
+.compare-col {
+  background: var(--gray-100);
+  border-radius: 10px;
+  padding: 20px;
+}
+.compare-col.highlight {
+  background: linear-gradient(135deg, var(--dark-slate) 0%, var(--black) 100%);
+  color: var(--white);
+}
+.compare-col h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.compare-col.highlight h4 { color: var(--pink); }
+.compare-col ul li { font-size: 13px; }
+.compare-col.highlight ul li { color: rgba(255,255,255,0.85); }
+.compare-col.highlight ul li::before { color: var(--pink); }
+
+/* Segment cards */
+.segment-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--pink);
+}
+.segment-card h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.segment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.segment-detail h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--pink);
+  margin-bottom: 4px;
+}
+.segment-detail ul { margin: 0; }
+.segment-detail ul li { font-size: 13px; padding: 3px 0 3px 20px; }
+
+/* Script blocks */
+.script-block {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.script-block h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--pink);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.script-block p, .script-block blockquote {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.88);
+}
+.script-block blockquote {
+  border-left: 3px solid var(--pink);
+  padding-left: 16px;
+  margin: 10px 0;
+  font-style: italic;
+}
+.script-block .label {
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 6px;
+}
+.script-block .label.if-yes { background: var(--green-check); color: #fff; }
+.script-block .label.if-no { background: #E67E22; color: #fff; }
+
+/* Cadence timeline */
+.cadence-timeline {
+  position: relative;
+  padding-left: 28px;
+  margin: 16px 0;
+}
+.cadence-timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gray-200);
+}
+.cadence-day {
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+.cadence-day::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: var(--pink);
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--pink);
+}
+.cadence-day strong {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--black);
+  display: block;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+.cadence-day span {
+  font-size: 13px;
+  color: var(--gray-text);
+}
+
+/* Audit scorecard */
+.audit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.audit-item:last-child { border-bottom: none; }
+.audit-num {
+  width: 32px;
+  height: 32px;
+  background: var(--black);
+  color: var(--pink);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.audit-item h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.audit-item p { font-size: 13px; color: var(--gray-text); margin: 0; }
+
+/* Score badge */
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 12px 0;
+}
+.score-badge {
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+.score-badge.tier-1 { background: #E8F5E9; border: 1px solid #A5D6A7; }
+.score-badge.tier-2 { background: #FFF8E1; border: 1px solid #FFE082; }
+.score-badge.tier-3 { background: #FFF3E0; border: 1px solid #FFCC80; }
+.score-badge.tier-4 { background: #FFEBEE; border: 1px solid #EF9A9A; }
+.score-badge strong { font-family: 'Roboto Condensed', sans-serif; font-size: 18px; display: block; color: var(--black); }
+.score-badge span { font-size: 12px; color: var(--gray-text); }
+
+/* Video list */
+.video-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px;
+  background: var(--gray-100);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.video-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--black);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.video-item h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 2px;
+}
+.video-item p { font-size: 12px; color: var(--gray-text); margin: 0; }
+
+/* Coach's Note */
+.coach-note {
+  background: linear-gradient(135deg, rgba(107,114,128,0.06), rgba(107,114,128,0.02));
+  border: 1px solid rgba(107,114,128,0.2);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+.coach-note h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--pink);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.coach-note p {
+  font-size: 14px;
+  color: var(--body-text);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Module complete button */
+.module-footer {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 2px solid var(--gray-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background: var(--pink);
+  color: var(--white);
+}
+.btn-primary:hover { background: var(--pink-light); transform: translateY(-1px); box-shadow: var(--shadow); }
+.btn-secondary {
+  background: var(--black);
+  color: var(--white);
+}
+.btn-secondary:hover { background: var(--dark-slate); }
+.btn-outline {
+  background: transparent;
+  color: var(--black);
+  border: 2px solid var(--gray-200);
+}
+.btn-outline:hover { border-color: var(--black); }
+
+/* Messaging grid */
+.msg-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+.msg-item {
+  padding: 14px 18px;
+  background: var(--gray-100);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--body-text);
+  line-height: 1.6;
+  border-left: 3px solid var(--pink);
+}
+.msg-item.avoid {
+  border-left-color: var(--red-lock);
+  background: #FFF5F5;
+}
+
+/* Key concepts grid */
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+.concept-item {
+  padding: 16px;
+  background: var(--gray-100);
+  border-radius: 8px;
+}
+.concept-item h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.concept-item p { font-size: 12px; color: var(--gray-text); margin: 0; line-height: 1.5; }
+
+/* Locked overlay */
+.locked-overlay {
+  text-align: center;
+  padding: 80px 24px;
+}
+.locked-overlay .lock-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
+.locked-overlay h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+.locked-overlay p { font-size: 14px; color: var(--gray-text); }
+
+/* Blue accent section */
+.blue-accent-card {
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.blue-accent-card h3 {
+  color: var(--white);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.blue-accent-card p { color: rgba(255,255,255,0.88); }
+.blue-accent-card ul li { color: rgba(255,255,255,0.88); }
+.blue-accent-card ul li::before { color: rgba(255,255,255,0.5); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { padding: 32px 16px 40px; }
+  .hero-logo img { height: 44px; }
+  .hero-tagline { font-size: 11px; gap: 12px; padding: 8px 16px; }
+  .module-container { padding: 24px 16px 60px; }
+  .content-card { padding: 20px; }
+  .nav-tab { padding: 12px 10px; font-size: 11px; }
+  .compare-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-logo">
+    <img src="https://producersprospect.com/wp-content/uploads/2023/11/logo-offcial-producers-prospects-1.png" alt="Producers Prospect" />
+  </div>
+  <h1>Recruiter Training <em>Hub</em></h1>
+  <p class="subtitle">Your complete field manual for identifying under-supported advisors and showing them why our growth platform is the right move.</p>
+  <div class="hero-tagline">
+    Prospect <span>|</span> Produce <span>|</span> Prosper
+  </div>
+</header>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="progress-section">
+  <div class="progress-inner">
+    <div class="progress-label">
+      <span>Training Progress</span>
+      <span class="count" id="progressText">0 of 11 modules complete</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODULE NAV ===== -->
+<nav class="module-nav">
+  <div class="nav-inner" id="navTabs"></div>
+</nav>
+
+<!-- ===== MODULE CONTENT ===== -->
+<main class="module-container" id="moduleContainer"></main>
+
+<script>
+// ===== MODULE DATA =====
+const modules = [
+  {
+    id: 0,
+    short: "Quick Start",
+    title: "Quick Start Summary",
+    desc: "Your mission, success metrics, and the core recruiting thesis.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Your Mission</h3>
+        <p>Move high-potential advisors and agents into deeper conversation with us by showing them three things:</p>
+        <ul>
+          <li>Their current IMO may be giving them product access, but not real growth support</li>
+          <li>Their digital brand may not reflect the level of advisor they believe they are</li>
+          <li>We can help them <strong>prospect better, produce more, and prosper faster</strong></li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> What Success Looks Like</h3>
+        <ul>
+          <li>Start strong conversations</li>
+          <li>Uncover frustration with the current IMO relationship</li>
+          <li>Expose gaps in brand, visibility, follow-up, and sales process</li>
+          <li>Create urgency around missed opportunity</li>
+          <li>Book qualified meetings</li>
+          <li>Help move business relationships over time</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Core Recruiting Thesis</h3>
+        <p>Most advisors do not need another product sheet. They need:</p>
+        <ul>
+          <li>Clearer positioning</li>
+          <li>Stronger branding</li>
+          <li>More lead flow</li>
+          <li>Better follow-up systems</li>
+          <li>Better conversion support</li>
+          <li>A growth partner, not just a wholesaler</li>
+        </ul>
+      </div>
+
+      <div class="blue-accent-card">
+        <h3><span class="icon">&#9670;</span> Your Edge</h3>
+        <p>You are not calling to "pitch a contract move." You are calling to diagnose:</p>
+        <ul>
+          <li>Growth gap</li>
+          <li>Support gap</li>
+          <li>Branding gap</li>
+          <li>Visibility gap</li>
+          <li>Conversion gap</li>
+        </ul>
+        <p style="margin-top:8px;">Then you connect those gaps to our model.</p>
+      </div>
+    `
+  },
+  {
+    id: 1,
+    short: "Who We Are",
+    title: "Who We Are",
+    desc: "Our platform model and how to position us in recruiter language.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Our Platform</h3>
+        <p>We are a one-stop solution for financial professionals looking to modernize their practice through forward-thinking brand and marketing strategies, product positioning, and digital-age resources. We provide comprehensive IMO support, white-glove concierge service, coaching, branding, website design, CRM tools, digital marketing, live events, webinars, video production, and sales training.</p>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> The Model: Prospect &rarr; Produce &rarr; Prosper</h3>
+
+        <h4>Prospect &mdash; Get in front of more of the right clients</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>Recruiter Translation</h5>
+            <ul>
+              <li>More visibility</li>
+              <li>Better lead flow</li>
+              <li>Stronger first impression</li>
+              <li>More at-bats</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4>Produce &mdash; Know what to say and convert more opportunities</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>Recruiter Translation</h5>
+            <ul>
+              <li>Tighter talk tracks</li>
+              <li>Better event conversion</li>
+              <li>Stronger follow-up</li>
+              <li>More confidence in the sales process</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4>Prosper &mdash; Build a better business and a better life</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>Recruiter Translation</h5>
+            <ul>
+              <li>Increased production</li>
+              <li>More confidence</li>
+              <li>Stronger business infrastructure</li>
+              <li>Less isolation</li>
+              <li>A more scalable practice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: 2,
+    short: "Differentiators",
+    title: "What Makes Us Different",
+    desc: "Generic IMO vs. our platform — side by side.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Generic IMO vs. What We Offer</h3>
+        <div class="compare-grid">
+          <div class="compare-col">
+            <h4>Generic IMO</h4>
+            <ul>
+              <li>Carrier access</li>
+              <li>Product grids</li>
+              <li>Occasional wholesaler support</li>
+              <li>Broad, inconsistent marketing help</li>
+              <li>Reactive service</li>
+            </ul>
+          </div>
+          <div class="compare-col highlight">
+            <h4>What We Deliver</h4>
+            <ul>
+              <li>Boutique IMO support with comprehensive marketing &amp; sales support</li>
+              <li>White-glove concierge service</li>
+              <li>Custom strategy &amp; brand development</li>
+              <li>Website design &amp; CRM automation</li>
+              <li>Digital marketing, database marketing</li>
+              <li>Events, webinars, TV, radio, podcast &amp; video support</li>
+              <li>Sales training and coaching</li>
+              <li>Customizable thought-leadership content</li>
+              <li>Product + broker-dealer resources through a broader support model</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="blue-accent-card">
+        <h3><span class="icon">&#9670;</span> Core Recruiting Message</h3>
+        <p><strong>Do not position us as "just another IMO."</strong></p>
+        <p>Position us as: A growth platform for advisors who want more than product access.</p>
+      </div>
+
+      <div class="coach-note">
+        <h4>Coach's Note</h4>
+        <p>When an advisor says, "I already have an IMO," your internal response should be: <strong>"You may have an IMO. But do you have a platform that helps you prospect, produce, and prosper?"</strong></p>
+      </div>
+    `
+  },
+  {
+    id: 3,
+    short: "Who to Recruit",
+    title: "Who You're Recruiting",
+    desc: "Ideal prospect segments, what they care about, and how we help each.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Ideal Prospect Segments</h3>
+        <p>Five advisor profiles represent the strongest recruiting opportunities.</p>
+      </div>
+
+      <div class="segment-card">
+        <h4>1. Independent Financial Advisors</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>They Care About</h5>
+            <ul>
+              <li>Credibility</li>
+              <li>Autonomy</li>
+              <li>Production</li>
+              <li>Client growth</li>
+              <li>Better support</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>Frustrated By</h5>
+            <ul>
+              <li>Weak branding</li>
+              <li>Inconsistent lead flow</li>
+              <li>Doing everything themselves</li>
+              <li>Low-value IMO relationships</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>How We Help</h5>
+            <ul>
+              <li>We help them look bigger, sharper, and more credible</li>
+              <li>We modernize their client acquisition engine</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="segment-card">
+        <h4>2. Insurance Agents with Annuity Focus</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>They Care About</h5>
+            <ul>
+              <li>Practical sales support</li>
+              <li>Product fit</li>
+              <li>Lead flow</li>
+              <li>Credibility with pre-retirees and retirees</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>Frustrated By</h5>
+            <ul>
+              <li>Poor follow-up systems</li>
+              <li>Lack of marketing</li>
+              <li>Inconsistent appointment flow</li>
+              <li>Being treated like just another contract</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>How We Help</h5>
+            <ul>
+              <li>We wrap better brand, sales support, and infrastructure around annuity production</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="segment-card">
+        <h4>3. Hybrid Advisors</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>They Care About</h5>
+            <ul>
+              <li>Efficient growth</li>
+              <li>Broader planning conversations</li>
+              <li>Standing out in a crowded market</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>Frustrated By</h5>
+            <ul>
+              <li>Unclear messaging</li>
+              <li>Fragmented digital presence</li>
+              <li>Low conversion from online and event traffic</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>How We Help</h5>
+            <ul>
+              <li>We create cohesion across brand, messaging, and growth channels</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="segment-card">
+        <h4>4. Plateaued Producers</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>They Care About</h5>
+            <ul>
+              <li>Getting unstuck</li>
+              <li>Finding a better growth lever</li>
+              <li>Improving conversion</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>Frustrated By</h5>
+            <ul>
+              <li>Same effort, same result</li>
+              <li>No strategic outside perspective</li>
+              <li>No fresh growth ideas</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>How We Help</h5>
+            <ul>
+              <li>We introduce better positioning, better process, and better support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="segment-card">
+        <h4>5. Advisors with Weak Digital Footprint</h4>
+        <div class="segment-grid">
+          <div class="segment-detail">
+            <h5>They Care About</h5>
+            <ul>
+              <li>Reputation</li>
+              <li>Professionalism</li>
+              <li>Referrals</li>
+              <li>Trust</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>Frustrated By</h5>
+            <ul>
+              <li>Invisible online presence</li>
+              <li>Outdated website</li>
+              <li>Weak social proof</li>
+              <li>Inconsistent messaging</li>
+            </ul>
+          </div>
+          <div class="segment-detail">
+            <h5>How We Help</h5>
+            <ul>
+              <li>We help advisors build a cohesive brand and digital presence, supported by thought leadership through content, media, and marketing assets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: 4,
+    short: "FIA Fundamentals",
+    title: "FIA Fundamentals for a Recruiter",
+    desc: "Just enough product knowledge to speak intelligently and ask great questions.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> What a Fixed Indexed Annuity Is</h3>
+        <p>A fixed indexed annuity is an insurance product designed to provide principal protection from market loss, while crediting interest based on the performance of an external index subject to the contract's rules, limitations, and optional features.</p>
+
+        <h4>What It Is Not</h4>
+        <ul>
+          <li>A direct stock market investment</li>
+          <li>A security that gives full market upside</li>
+          <li>A one-size-fits-all solution</li>
+          <li>Appropriate for every client</li>
+          <li>A substitute for full financial planning</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Who FIAs Are Generally Right For</h3>
+        <p>Often a fit for people who want some combination of:</p>
+        <ul>
+          <li>Principal protection</li>
+          <li>Tax deferral</li>
+          <li>Retirement income planning</li>
+          <li>Limited upside linked to an index</li>
+          <li>A more conservative sleeve inside a retirement strategy</li>
+        </ul>
+
+        <h4>Who They May Not Be Right For</h4>
+        <ul>
+          <li>People who need full liquidity</li>
+          <li>Those who want aggressive market participation</li>
+          <li>Those who may need the entire account in the near term</li>
+          <li>Those who do not understand surrender schedules or contract tradeoffs</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Key Concepts You Must Understand</h3>
+        <div class="concept-grid">
+          <div class="concept-item">
+            <h5>Surrender Charges</h5>
+            <p>A time-based penalty schedule if money is withdrawn above allowed limits during the surrender period.</p>
+          </div>
+          <div class="concept-item">
+            <h5>Caps</h5>
+            <p>A maximum credited return under a strategy.</p>
+          </div>
+          <div class="concept-item">
+            <h5>Spreads</h5>
+            <p>A percentage deducted from the index gain before interest is credited.</p>
+          </div>
+          <div class="concept-item">
+            <h5>Participation Rates</h5>
+            <p>The percentage of the index gain used in the crediting formula.</p>
+          </div>
+          <div class="concept-item">
+            <h5>Income Riders / GLWB</h5>
+            <p>Optional riders that can create future guaranteed withdrawal benefits, usually for lifetime income.</p>
+          </div>
+          <div class="concept-item">
+            <h5>Enhanced Death Benefit</h5>
+            <p>Optional features designed to improve legacy outcomes under certain contract structures.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Safe Recruiter Language</h3>
+        <div class="msg-grid">
+          <div class="msg-item">"At a high level&hellip;"</div>
+          <div class="msg-item">"Generally speaking&hellip;"</div>
+          <div class="msg-item">"That depends on the product and client situation&hellip;"</div>
+          <div class="msg-item">"I'm speaking conceptually here, not product-specifically&hellip;"</div>
+        </div>
+        <h4 style="margin-top:16px;">Avoid These</h4>
+        <div class="msg-grid">
+          <div class="msg-item avoid">"This is always the best solution"</div>
+          <div class="msg-item avoid">"Your clients will definitely get&hellip;"</div>
+          <div class="msg-item avoid">"This product beats the market"</div>
+          <div class="msg-item avoid">"There's no downside at all"</div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <h4>Coach's Note</h4>
+        <p>You are <strong>not</strong> the product explainer of last resort. You only need to be strong enough to speak intelligently, ask good questions, not overstate, create confidence, and hand off detailed product conversations appropriately.</p>
+      </div>
+    `
+  },
+  {
+    id: 5,
+    short: "YouTube Learning",
+    title: "Must-Watch YouTube Learning Playlist",
+    desc: "Curated videos to build fluency around FIAs, riders, and retirement income.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> FIA Basics</h3>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>Fixed Indexed Annuity Basics for Retirees: Pros, Cons, and How They Work</h5>
+            <p>Oak Harvest Financial Group &mdash; Good overview of mechanics, misconceptions, and practical use cases.</p>
+          </div>
+        </div>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>Basics of Fixed Indexed Annuities</h5>
+            <p>A plain-English beginner video focused on core FIA structure and fit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Income Riders</h3>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>What is a Fixed Indexed Annuity with Income Rider?</h5>
+            <p>Retirement Planning Education &mdash; Useful for understanding GLWB-style concepts at a practical level.</p>
+          </div>
+        </div>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>Fixed Indexed Annuities | Income Rider - Why, How, When</h5>
+            <p>Focused specifically on when and why income riders are used.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Broader Retirement Income Context</h3>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>How to Use Annuities for Lifetime Income</h5>
+            <p>Featuring Dr. Wade Pfau and Dr. Michael Finke &mdash; Why annuities matter in retirement-income architecture.</p>
+          </div>
+        </div>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>Episode 76: Fixed Index Annuities &mdash; Do they present a best of&hellip;</h5>
+            <p>Another Wade Pfau-related resource that helps frame FIA tradeoffs and features analytically.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Simple Overview with Riders &amp; Contract Levers</h3>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>Fixed Index Annuities Explained in Simple Steps!</h5>
+            <p>Useful because it explicitly references caps, spreads, participation rates, riders, liquidity rules, and use cases in one place.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Our Content</h3>
+        <div class="video-item">
+          <div class="video-icon">&#9654;</div>
+          <div>
+            <h5>Our YouTube Channel / Prospect, Produce, Prosper</h5>
+            <p>Monitor this for how we talk publicly about advisor growth, AI, service, branding, and recruiting themes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <h4>Coach's Note</h4>
+        <p>These videos are not there to make you a technician. They are there to make you: <strong>fluent, comfortable, credible, and capable of asking better questions.</strong></p>
+      </div>
+    `
+  },
+  {
+    id: 6,
+    short: "Prospecting",
+    title: "Prospecting Playbook",
+    desc: "Where to find recruitable advisors, signals, outreach angles, and 14-day cadence.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Where to Find Recruitable Advisors</h3>
+        <ul>
+          <li>LinkedIn</li>
+          <li>Advisor websites</li>
+          <li>Seminar marketers</li>
+          <li>Annuity seminar speakers</li>
+          <li>Local independent agents</li>
+          <li>Podcast guests</li>
+          <li>Webinar hosts</li>
+          <li>Advisors with weak online presence but strong local footprint</li>
+          <li>Advisors with decent production and poor branding</li>
+          <li>Advisors who look successful offline but invisible online</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Signals Someone Is Recruitable</h3>
+        <ul>
+          <li>Outdated website</li>
+          <li>Weak LinkedIn profile</li>
+          <li>Inconsistent branding</li>
+          <li>Generic messaging</li>
+          <li>No niche clarity</li>
+          <li>Little or no thought leadership</li>
+          <li>Poor follow-up infrastructure</li>
+          <li>Low social proof</li>
+          <li>Flat digital presence</li>
+          <li>All product, no brand</li>
+          <li>Active, but sloppy</li>
+          <li>Capable, but not packaged well</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Warm Outreach Angles</h3>
+        <ul>
+          <li>Compliment a strong niche</li>
+          <li>Reference a podcast appearance</li>
+          <li>Reference an event topic</li>
+          <li>Reference their public profile</li>
+          <li>Offer quick brand-pack perspective</li>
+        </ul>
+
+        <h4>Cold Outreach Angles</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"I work with advisors who are producing but under-supported."</div>
+          <div class="msg-item">"A lot of advisors have product access, but not growth infrastructure."</div>
+          <div class="msg-item">"I spent a few minutes reviewing your brand pack and had a couple thoughts."</div>
+          <div class="msg-item">"You may be stronger than what your digital footprint is communicating."</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> 14-Business-Day Follow-Up Cadence</h3>
+        <div class="cadence-timeline">
+          <div class="cadence-day">
+            <strong>Day 1</strong>
+            <span>Call &middot; Voicemail &middot; LinkedIn profile view &middot; Email</span>
+          </div>
+          <div class="cadence-day">
+            <strong>Day 3</strong>
+            <span>Call &middot; Short follow-up email</span>
+          </div>
+          <div class="cadence-day">
+            <strong>Day 5</strong>
+            <span>LinkedIn connection request &middot; Text if appropriate</span>
+          </div>
+          <div class="cadence-day">
+            <strong>Day 7</strong>
+            <span>Brand-pack angle message</span>
+          </div>
+          <div class="cadence-day">
+            <strong>Day 9</strong>
+            <span>AI visibility angle message</span>
+          </div>
+          <div class="cadence-day">
+            <strong>Day 11</strong>
+            <span>Direct "not sure if this is relevant, but&hellip;" call</span>
+          </div>
+          <div class="cadence-day">
+            <strong>Day 14</strong>
+            <span>Breakup / permission-based close</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: 7,
+    short: "Brand Audit",
+    title: "Brand Pack / Digital Footprint Audit",
+    desc: "How to score an advisor's online presence and turn gaps into opportunities.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> What a Brand Pack Is</h3>
+        <p>An advisor's visible brand ecosystem:</p>
+        <ul>
+          <li>Website &middot; LinkedIn &middot; Instagram &middot; Facebook &middot; YouTube</li>
+          <li>Podcast &middot; Google presence &middot; Reviews &middot; Media mentions</li>
+          <li>Event pages &middot; Booking page &middot; Bio &middot; Articles &middot; Lead magnets</li>
+        </ul>
+        <p style="margin-top:12px;"><strong>The question you're asking:</strong> <em>"Is what you're really about as an advisor the same thing your brand is saying online?"</em></p>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Audit Checklist &mdash; Score Each from 1 to 5</h3>
+        <div class="audit-item">
+          <div class="audit-num">1</div>
+          <div>
+            <h5>Clarity</h5>
+            <p>Can I tell who they serve? What they do? Why they're different?</p>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-num">2</div>
+          <div>
+            <h5>Credibility</h5>
+            <p>Do they look current? Is the website professional? Is the brand cohesive?</p>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-num">3</div>
+          <div>
+            <h5>Trust</h5>
+            <p>Testimonials? Reviews? Media? Social proof? Proof of real expertise?</p>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-num">4</div>
+          <div>
+            <h5>Niche Strength</h5>
+            <p>Is a niche clear? Is the language generic or specific? Is there an obvious ideal client?</p>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-num">5</div>
+          <div>
+            <h5>Visibility</h5>
+            <p>Are they posting? Are they searchable? Is their content recent? Are they present where prospects look?</p>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-num">6</div>
+          <div>
+            <h5>AI Discoverability</h5>
+            <p>Is there enough clear language online for AI tools to understand what they do? Is there enough evidence for AI to trust the recommendation?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Score Interpretation</h3>
+        <div class="score-grid">
+          <div class="score-badge tier-1"><strong>24&ndash;30</strong><span>Strong but may still need scaling help</span></div>
+          <div class="score-badge tier-2"><strong>18&ndash;23</strong><span>Capable advisor, inconsistent brand</span></div>
+          <div class="score-badge tier-3"><strong>12&ndash;17</strong><span>Real opportunity</span></div>
+          <div class="score-badge tier-4"><strong>Under 12</strong><span>Invisible or off-message</span></div>
+        </div>
+      </div>
+
+      <div class="coach-note">
+        <h4>Key Takeaway</h4>
+        <p><strong>Weak brand pack = recruiting opportunity.</strong> Not because you insult them. Because you show them the gap between who they are, what they want to become, and what the market currently sees.</p>
+      </div>
+    `
+  },
+  {
+    id: 8,
+    short: "AI Visibility",
+    title: "AI Visibility Angle",
+    desc: "Why AI-driven discovery matters and how to use it as a recruiting wedge.",
+    content: `
+      <div class="blue-accent-card">
+        <h3><span class="icon">&#9670;</span> Why This Matters</h3>
+        <p>Our own public content and LinkedIn updates show an active focus on AI, including messaging around how advisors can use AI effectively and how poor inputs lead to poor outputs. Our website, podcast ecosystem, and LinkedIn presence all reinforce the idea that modern visibility and messaging matter.</p>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> The Recruiting Insight</h3>
+        <p>Prospects are increasingly using AI tools to evaluate professionals. That means more advisor discovery is shifting toward:</p>
+        <ul>
+          <li>Clear online evidence</li>
+          <li>Trust signals</li>
+          <li>Structured content</li>
+          <li>Digital consistency</li>
+          <li>Public expertise footprint</li>
+        </ul>
+        <p>When AI gives a prospect just a few firms, that is a big deal. The firms being surfaced likely have enough public evidence to be understood, enough specificity to be matched to a niche, and enough trust signals to be recommended.</p>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> How to Deliver This Message</h3>
+
+        <h4>Verbal Version (Phone)</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"A lot of advisors still think visibility is about SEO or social posting alone. But more prospects are using AI to compare advisors directly. If your digital footprint is weak, generic, or inconsistent, you may not even enter the conversation."</div>
+        </div>
+
+        <h4>Email Version</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"I've been watching how AI tools are changing advisor discovery. More prospects are now asking ChatGPT and Claude who they should interview, and why. The firms that show up usually have clear positioning, relevant proof, and enough online evidence for the model to trust. If your brand doesn't reflect your real value, you may be invisible in a category where visibility is compounding."</div>
+        </div>
+
+        <h4>LinkedIn DM Version</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"Quick thought: a lot of advisor discovery is shifting into AI-driven search. If your brand, niche, and proof aren't clear online, you may be stronger in real life than you look digitally. That gap is becoming expensive."</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> AI Visibility Test Prompt</h3>
+        <p>Use this exact framework:</p>
+        <div class="script-block">
+          <blockquote>"I am a [ideal client] in [city/state]. I'm looking for a financial advisor who specializes in [niche]. Who would you recommend and why?"</blockquote>
+          <h4 style="margin-top:14px;">Then Ask Follow-Ups:</h4>
+          <ul style="margin-top:8px;">
+            <li style="color:rgba(255,255,255,0.85);padding-left:20px;">Why were these firms chosen?</li>
+            <li style="color:rgba(255,255,255,0.85);padding-left:20px;">What signals made them credible?</li>
+            <li style="color:rgba(255,255,255,0.85);padding-left:20px;">What content did you rely on?</li>
+            <li style="color:rgba(255,255,255,0.85);padding-left:20px;">What would make another advisor more recommendable?</li>
+          </ul>
+        </div>
+        <h4>How to Use the Result</h4>
+        <ul>
+          <li>If the prospect is not surfaced &rarr; that is a pain point</li>
+          <li>If competitors show up &rarr; that is a wedge</li>
+          <li>If the prospect looks generic &rarr; that is a positioning gap</li>
+          <li>If the prospect's brand is weak &rarr; we have a relevant solution</li>
+        </ul>
+      </div>
+    `
+  },
+  {
+    id: 9,
+    short: "Messaging",
+    title: "Soft and Direct Messaging",
+    desc: "Opener lines, discovery questions, transition statements, and appointment-setting language.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> A. Soft Messaging</h3>
+
+        <h4>5 Opener Lines</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"I spent a few minutes looking at your practice and thought you had a strong foundation."</div>
+          <div class="msg-item">"You look like someone who has built something real, which is why I wanted to reach out."</div>
+          <div class="msg-item">"I talk with advisors who are doing good work but not always getting the support they deserve."</div>
+          <div class="msg-item">"This may or may not be relevant, but I had a few ideas after reviewing your online presence."</div>
+          <div class="msg-item">"You seem established &mdash; I'm curious whether your current platform is helping you grow the way it should."</div>
+        </div>
+
+        <h4>5 Discovery Questions</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"What's working best for you right now?"</div>
+          <div class="msg-item">"Where do you feel under-supported?"</div>
+          <div class="msg-item">"How much help do you get beyond product access?"</div>
+          <div class="msg-item">"How are you currently generating new opportunities?"</div>
+          <div class="msg-item">"Do you feel like your digital brand reflects the quality of your practice?"</div>
+        </div>
+
+        <h4>5 Transition Statements</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"That's exactly the kind of gap we help advisors close."</div>
+          <div class="msg-item">"That's where a growth platform can make a huge difference."</div>
+          <div class="msg-item">"A lot of advisors we talk to say the same thing."</div>
+          <div class="msg-item">"That usually points to a support issue, not a talent issue."</div>
+          <div class="msg-item">"You may be closer than you think &mdash; the infrastructure may just be lagging."</div>
+        </div>
+
+        <h4>5 Appointment-Setting Lines</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"Would it be worth 20 minutes to compare what you have versus what's possible?"</div>
+          <div class="msg-item">"I think a short strategy call could be useful."</div>
+          <div class="msg-item">"Let's pressure-test whether there's a fit."</div>
+          <div class="msg-item">"Would next week be crazy for a quick conversation?"</div>
+          <div class="msg-item">"No hard pitch &mdash; just a smarter look at what support could look like."</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> B. Direct Messaging</h3>
+
+        <h4>5 Opener Lines</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"A lot of advisors are loyal to IMOs that are no longer helping them grow."</div>
+          <div class="msg-item">"If your current IMO is only giving you product access, that's not real support."</div>
+          <div class="msg-item">"The market is changing fast, and too many advisors are under-equipped."</div>
+          <div class="msg-item">"If your brand, visibility, and sales process are weak, staying put gets expensive."</div>
+          <div class="msg-item">"You may be leaving growth on the table simply because your infrastructure is behind."</div>
+        </div>
+
+        <h4>5 Discovery Questions</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"What is your IMO doing for you besides contracts?"</div>
+          <div class="msg-item">"How are they helping you generate opportunities?"</div>
+          <div class="msg-item">"How are they helping you convert?"</div>
+          <div class="msg-item">"How are they helping your brand show up online?"</div>
+          <div class="msg-item">"If I looked at your growth over the last year, what support did they really provide?"</div>
+        </div>
+
+        <h4>5 Transition Statements</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"That sounds like maintenance, not growth support."</div>
+          <div class="msg-item">"That's usually where advisors realize they've outgrown the relationship."</div>
+          <div class="msg-item">"You've got production capability &mdash; the platform just may not match it."</div>
+          <div class="msg-item">"That gap is exactly where momentum leaks."</div>
+          <div class="msg-item">"At some point, staying comfortable becomes more expensive than changing."</div>
+        </div>
+
+        <h4>5 Appointment-Setting Lines</h4>
+        <div class="msg-grid">
+          <div class="msg-item">"Let's do a straight comparison."</div>
+          <div class="msg-item">"Give me 20 minutes and I'll show you where the hidden gap is."</div>
+          <div class="msg-item">"You don't need a pitch. You need a benchmark."</div>
+          <div class="msg-item">"Let's see whether your current setup is actually helping you win."</div>
+          <div class="msg-item">"If there's no fit, no problem &mdash; but you should at least know."</div>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: 10,
+    short: "Call Scripts",
+    title: "Call Scripts",
+    desc: "11 ready-to-use call scripts for every stage of the recruiting conversation.",
+    content: `
+      <div class="content-card">
+        <h3><span class="icon">&#9670;</span> Complete Script Library</h3>
+        <p>Each script below is designed for a specific moment in the recruiting process. Adapt them to your style while keeping the core structure.</p>
+      </div>
+
+      <div class="script-block">
+        <h4>1) First Cold Call to an Advisor</h4>
+        <blockquote>"Hi [Name], this is Mitch with Producers Prospect. I'll keep it brief. We work with independent advisors and insurance professionals who want more than just product access from an IMO. I came across your practice and wanted to ask a simple question: do you feel fully supported in how you're growing right now &mdash; not just in products, but in branding, lead flow, and sales support?"</blockquote>
+        <div style="margin-top:12px;">
+          <span class="label if-yes">If Yes</span>
+          <p>"Fair enough. Out of curiosity, what does strong support look like in your world today?"</p>
+        </div>
+        <div style="margin-top:10px;">
+          <span class="label if-no">If Somewhat / Not Really</span>
+          <p>"That's exactly why I called. We work with advisors who are talented, but whose platform isn't helping them prospect, produce, and prosper the way it should. Would a short conversation next week be unreasonable?"</p>
+        </div>
+      </div>
+
+      <div class="script-block">
+        <h4>2) First Follow-Up Call After No Response</h4>
+        <blockquote>"Hi [Name], Mitch here again with Producers Prospect. I reached out because we spend a lot of time with advisors who are good at what they do but whose current setup isn't doing enough to help them grow. I had a look at your public brand footprint and thought there may be an opportunity worth discussing. Do you have two minutes?"</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>3) Soft Consultative Call</h4>
+        <blockquote>"Before I tell you anything about us, I'd rather understand you. What part of growth feels the heaviest right now &mdash; finding opportunities, converting them, or building a brand that actually reflects the quality of your practice?"</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>4) Direct "Why Stay With Your Current IMO?" Call</h4>
+        <blockquote>"Let me ask this directly: if your current IMO disappeared tomorrow, what would you actually miss besides the contract? Because if the answer is 'not much,' that usually tells me the relationship is functional, not strategic."</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>5) Brand Pack Audit Call</h4>
+        <blockquote>"Hi [Name], Mitch with Producers Prospect. I took a few minutes to review your brand pack &mdash; your website, LinkedIn, and public-facing presence &mdash; because we work with advisors on growth positioning. The reason I'm calling is simple: I think you may be better than what your brand is currently communicating. That creates a trust gap, and in today's market that gap can cost real opportunities. I'd love to share two or three observations and see whether they resonate. Open to that?"</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>6) AI Visibility Wake-Up Call</h4>
+        <blockquote>"Something we're seeing more often is prospects using ChatGPT and Claude to compare advisors before they ever fill out a form or book a call. If your online footprint is thin or generic, you may never make that shortlist. I think a lot of strong advisors are more invisible than they realize. Have you ever tested whether your practice is being surfaced in those searches?"</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>7) Appointment-Setting Call</h4>
+        <blockquote>"Based on what you've shared, I don't think this needs a long process. The next step is just a focused strategy conversation to compare where you are versus what a more growth-oriented support platform could look like. Would Tuesday or Thursday be better?"</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>8) Re-Engagement Call for Old Lead</h4>
+        <blockquote>"Hi [Name], Mitch here. We spoke a while back and I wanted to circle back because the issues we discussed &mdash; brand clarity, support, and growth infrastructure &mdash; have only become more important. I thought of you because advisors who delay this usually don't lose ability &mdash; they lose momentum."</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>9) Referral-Source Introduction Script</h4>
+        <blockquote>"Hi [Name], I'm Mitch with Producers Prospect. We help advisors grow by improving the infrastructure around their business &mdash; brand, visibility, marketing, sales support, and positioning. If you know advisors who are producing but clearly under-supported, I'd value the chance to connect. Our sweet spot is helping capable advisors unlock more from what they already built."</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>10) Voicemail</h4>
+        <blockquote>"Hi [Name], this is Mitch with Producers Prospect. I'm reaching out because I believe there may be a gap between the quality of your practice and how your brand and support platform are currently helping you grow. Nothing urgent &mdash; I just thought a short conversation could be worthwhile. I'll follow up by email as well."</blockquote>
+      </div>
+
+      <div class="script-block">
+        <h4>11) Full Script: The Brand Pack Download Angle</h4>
+        <blockquote>"Hi [Name], Mitch with Producers Prospect. I know this is out of the blue, but I wanted to tell you why I'm calling. I took a little time to download your brand pack &mdash; meaning I looked through your website, LinkedIn, social presence, and the rest of your public footprint &mdash; because part of what we do is help advisors close the gap between who they really are and what the market sees."</blockquote>
+        <p style="margin-top:10px;">What stood out is that you seem to have real substance, but the brand may not be fully saying that yet. When that happens, a few things usually break:</p>
+        <ul style="margin-top:8px;">
+          <li style="color:rgba(255,255,255,0.85);padding-left:20px;">Prospects don't immediately understand the niche</li>
+          <li style="color:rgba(255,255,255,0.85);padding-left:20px;">Trust takes longer to build</li>
+          <li style="color:rgba(255,255,255,0.85);padding-left:20px;">Referrals have less reinforcement</li>
+          <li style="color:rgba(255,255,255,0.85);padding-left:20px;">AI tools and digital search can't confidently surface the advisor</li>
+          <li style="color:rgba(255,255,255,0.85);padding-left:20px;">Competitors with better packaging can win attention first</li>
+        </ul>
+        <p style="margin-top:10px;">Because if what the brand says online doesn't match what you're about as an advisor &mdash; that's not just a branding issue. It's a growth issue.</p>
+      </div>
+    `
+  }
+];
+
+// ===== STATE =====
+let currentModule = 0;
+let completedModules = new Set();
+try {
+  const saved = sessionStorage.getItem('pp_completed');
+  if (saved) completedModules = new Set(JSON.parse(saved));
+} catch(e) {}
+
+// ===== RENDER =====
+function saveState() {
+  try { sessionStorage.setItem('pp_completed', JSON.stringify([...completedModules])); } catch(e) {}
+}
+
+function renderNav() {
+  const nav = document.getElementById('navTabs');
+  nav.innerHTML = modules.map((m, i) => {
+    const isCompleted = completedModules.has(i);
+    const isActive = i === currentModule;
+    let cls = 'nav-tab';
+    if (isActive) cls += ' active';
+    if (isCompleted) cls += ' completed';
+    return '<div class="' + cls + '" data-idx="' + i + '" onclick="goToModule(' + i + ')">' +
+      '<span class="tab-num">' + (isCompleted ? '&#10003;' : (i + 1)) + '</span>' +
+      m.short +
+    '</div>';
+  }).join('');
+}
+
+function renderModule() {
+  const m = modules[currentModule];
+  const isComplete = completedModules.has(currentModule);
+  const container = document.getElementById('moduleContainer');
+
+  let footerLeft = '';
+  if (currentModule > 0) {
+    footerLeft = '<button class="btn btn-outline" onclick="goToModule(' + (currentModule - 1) + ')">&larr; Previous</button>';
+  }
+
+  let footerRight = '';
+  if (!isComplete) {
+    footerRight += '<button class="btn btn-primary" onclick="completeModule(' + currentModule + ')">Mark Complete &#10003;</button>';
+  } else {
+    footerRight += '<span style="color:var(--green-check);font-weight:700;font-size:14px;font-family:Roboto Condensed,sans-serif;text-transform:uppercase;letter-spacing:1px;">&#10003; Completed</span>';
+  }
+  if (currentModule < modules.length - 1) {
+    footerRight += ' <button class="btn btn-secondary" onclick="goToModule(' + (currentModule + 1) + ')">Next &rarr;</button>';
+  }
+
+  container.innerHTML =
+    '<div class="module-panel active">' +
+      '<div class="module-header">' +
+        '<div class="module-badge">Module ' + (currentModule + 1) + ' of ' + modules.length + '</div>' +
+        '<h2>' + m.title + '</h2>' +
+        '<p>' + m.desc + '</p>' +
+      '</div>' +
+      m.content +
+      '<div class="module-footer">' +
+        '<div>' + footerLeft + '</div>' +
+        '<div style="display:flex;gap:10px;align-items:center;">' + footerRight + '</div>' +
+      '</div>' +
+    '</div>';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function updateProgress() {
+  const pct = (completedModules.size / modules.length) * 100;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = completedModules.size + ' of ' + modules.length + ' modules complete';
+}
+
+function goToModule(idx) {
+  currentModule = idx;
+  renderNav();
+  renderModule();
+  updateProgress();
+}
+
+function completeModule(idx) {
+  completedModules.add(idx);
+  saveState();
+  renderNav();
+  renderModule();
+  updateProgress();
+}
+
+// ===== INIT =====
+renderNav();
+renderModule();
+updateProgress();
+</script>
+</body>
+</html>
